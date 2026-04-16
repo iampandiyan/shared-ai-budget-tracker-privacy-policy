@@ -3,46 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - BudgetTracker</title>
+    <title>Privacy Policy | BudgetTracker</title>
     <style>
+        :root {
+            var(--primary-color): #1A237E;
+            --primary-color: #1A237E;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px 20px 50px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
+
         h1 {
-            color: #0366d6; /* Blue heading */
-            border-bottom: 1px solid #eaecef;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
             padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-top: 0;
         }
+
         h2 {
-            color: #0366d6; /* Blue heading */
+            color: var(--primary-color);
+            font-size: 1.4em;
+            margin-top: 30px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+        }
+
+        p, li {
+            font-size: 1.05em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            background: #f0f2f5;
+            padding: 20px;
+            border-radius: 8px;
             margin-top: 30px;
         }
-        p, li {
-            font-size: 16px;
+
+        .deletion-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 20px 0;
         }
-        ul {
-            margin-top: 5px;
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #888;
         }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        a:hover {
-            text-decoration: underline;
+
+        a { color: var(--primary-color); }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+            h1 { font-size: 1.8em; }
         }
     </style>
 </head>
 <body>
 
+<div class="container">
     <h1>Privacy Policy for BudgetTracker</h1>
-    <p><strong>Last Updated:</strong> April 16, 2026</p>
+    <p class="last-updated">Last Updated: April 16, 2026</p>
 
     <p>BudgetTracker ("we," "our," or "the App") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
 
@@ -89,17 +143,27 @@
         <li><strong>In-App Deletion:</strong> You can delete individual financial records, clear your entire local database, or revoke AI access at any time within the app settings. Deleting the app from your device will also instantly erase all local data.</li>
         <li><strong>Cloud Data Management:</strong> To delete your backed-up data or synced spreadsheets, you simply need to remove the respective files directly from your personal Google Drive and Google Sheets accounts.</li>
         <li><strong>AI Data:</strong> Once Together AI processes your query and returns a response to your device, the prompt data is not retained by us.</li>
+        <li><strong>Web-Based Deletion Request:</strong> If you wish to delete your account and all associated data from our systems without using the app, please use our request form:</li>
     </ul>
     
-    <p><strong>Web-Based Deletion Request:</strong> If you wish to delete your account and all associated data from our systems without using the app, please use our request form:</p>
-    <p><strong>Data Deletion Request Form:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3t7CN6-Ypz90AJzVJWozfLfaAwF3AkxFW2DDAtt2jMWo5mA/viewform?usp=header" target="_blank">Click here to request account deletion</a></p>
+    <div class="deletion-box">
+        <strong>Data Deletion Request Form:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3t7CN6-Ypz90AJzVJWozfLfaAwF3AkxFW2DDAtt2jMWo5mA/viewform?usp=header" target="_blank">Click here to request account deletion</a>
+    </div>
+
     <p>Requests are processed within 7 business days. Please note that data stored in your private Google Drive must be managed via your Google Account settings.</p>
 
     <h2>8. Children’s Privacy</h2>
     <p>BudgetTracker is intended for users aged 18 and over. We do not knowingly collect data from children.</p>
 
-    <h2>9. Contact Us</h2>
-    <p>Email: <a href="mailto:mepandiyan@gmail.com">mepandiyan@gmail.com</a></p>
+    <div class="contact-info">
+        <h2>9. Contact Us</h2>
+        <p><strong>Email:</strong> mepandiyan@gmail.com</p>
+    </div>
+
+    <footer>
+        &copy; 2026 BudgetTracker. All rights reserved.
+    </footer>
+</div>
 
 </body>
 </html>
